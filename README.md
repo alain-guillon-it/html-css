@@ -174,7 +174,7 @@ Par défaut le pixel sera utilisé et donc il est possible d'ommettre le sigle *
 
 **ATTENTION AVEC L'ATTRIBUT "HEIGHT", VOUS RISQUEZ TRÈS PROBABLEMENT DE DEFORMER VOTRE IMAGE.** On préfèrera définir les valeurs dans le CSS et y inclure ici les valeurs d'origine de l'image. (bonne pratique)
 
-## Bonus un lien qui redirige vers google en cliquant sur une photo ou bien un paragraphe.
+## Bonus un lien qui redirige vers google en cliquant sur une photo ou bien un paragraphe
 
 **Sophie**, cherchait comment rediriger vers une page web quelconque en fonction d'un clic sur une quelconque image.
 
