@@ -122,10 +122,10 @@ Le lien permet de rediriger un élément spécifique vers une quelconque page de
 ```html
 <body>
   <!-- Un lien RELATIF -->
-  <a href="./contact.html" target="_blank">Contactez-moi<a />
+  <a href="./contact.html" target="_blank">Contactez-moi</a>
 
   <!-- Un lien ABSOLUE -->
-  <a href="https://www.google.fr" target="_blank">Google.fr<a />
+  <a href="https://www.google.fr" target="_blank">Google.fr</a>
 </body>
 ```
 
@@ -186,15 +186,15 @@ Par défaut le pixel sera utilisé et donc il est possible d'ommettre le sigle *
       src="./assets/images/plage.jpg"
       alt="Voici une superbe photo d'une plage libre de droit."
     />
-  <a />
+  </a>
 
   <!-- Un lien vers google au clic sur un paragraphe -->
   <a href="https://www.google.fr" target="_blank">
     <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident porro ad
-      eaque explicabo tempore ullam veniam totam temporibus optio tempora.
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident porro
+      ad eaque explicabo tempore ullam veniam totam temporibus optio tempora.
     </p>
-  <a />
+  </a>
 </body>
 ```
 
@@ -267,7 +267,6 @@ Les tableaux sont un ensemble de tag qui seront imbriqués les uns aux autres.
       <th colspan="5">Prix TTC</th>
       <td>792.04€</td>
     </tr>
-    <tr></tr>
   </table>
 </body>
 ```

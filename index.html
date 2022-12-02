@@ -10,8 +10,460 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Le title permet de définir le nom qui sera affiché dans notre onglet -->
     <title>Document</title>
+
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      pre {
+        padding: 25px 0;
+        background-color: #333;
+        color: skyblue;
+      }
+      fieldset {
+        padding: 25px;
+        margin: 50px;
+      }
+    </style>
   </head>
 
   <!-- Dans le Body c'est exactement tout ce qui sera visible à l'écran -->
-  <body></body>
+  <body>
+    <header>
+      <span>Mémoire</span>
+    </header>
+    <main>
+      <section>
+        <h1>Découverte du HTML</h1>
+        <nav>
+          <ul>
+            <li><a href="./index.html#structure">Structure de base HTML</a></li>
+            <li>
+              <a href="./index.html#title_size"
+                >Les différentes tailles d'un titre</a
+              >
+            </li>
+            <li>
+              <a href="./index.html#paragraphe"
+                >La conception d'un paragraphe</a
+              >
+            </li>
+            <li><a href="./index.html#liste">Les listes</a></li>
+            <li><a href="./index.html#links">Les liens</a></li>
+            <li><a href="./index.html#images">Les images</a></li>
+            <li><a href="./index.html#array">Les tableaux</a></li>
+            <li><a href="./index.html#form">La base des formulaires</a></li>
+            <li>
+              <a href="./index.html#inputs">Les différents types d'inputs</a>
+            </li>
+            <li><a href="./index.html#"></a></li>
+            <li><a href="./index.html#"></a></li>
+            <li><a href="./index.html#"></a></li>
+            <li><a href="./index.html#"></a></li>
+            <li><a href="./index.html#"></a></li>
+            <li><a href="./index.html#"></a></li>
+          </ul>
+        </nav>
+      </section>
+
+      <article id="structure">
+        <h1>Structure de base HTML</h1>
+        <code>
+          <pre>
+            &lt;!DOCTYPE html
+            &lt;html lang="en">
+              <!-- Ici c'est tout ce qui fera références aux en-tête de notre page web -->
+              &lt;head>
+                &lt;!-- le charset UTF-8 permet d'interprêter les accents dans un navigateur -->
+                &lt;meta charset="UTF-8" />
+                &lt;!-- Pour EDGE (Internet Explorer) -->
+                &lt;meta http-equiv="X-UA-Compatible" content="IE=edge" />
+                &lt;!-- Pour optimiser le responsive -->
+                &lt;meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                &lt;!-- Le title permet de définir le nom qui sera affiché dans notre onglet -->
+                &lt;title>Document&lt;/title>
+              &lt;/head>
+
+              &lt;body>
+
+              &lt;/body>
+            &lt;/html>
+          </pre>
+        </code>
+      </article>
+
+      <article id="title_size">
+        <h1>Les différentes tailles d'un titre</h1>
+        <code>
+          <pre>
+            &lt;!-- Il existe 6 niveau de titre -->
+            &lt;h1>Titre de Niveau h1&lt;/h1>
+            &lt;h2>Titre de Niveau h2&lt;/h2>
+            &lt;h3>Titre de Niveau h3&lt;/h3>
+            &lt;h4>Titre de Niveau h4&lt;/h4>
+            &lt;h5>Titre de Niveau h5&lt;/h5>
+            &lt;h6>Titre de Niveau h6&lt;/h6>
+          </pre>
+        </code>
+
+        <fieldset>
+          <legend>Rendu</legend>
+          <h1>Titre de Niveau h1</h1>
+          <h2>Titre de Niveau h2</h2>
+          <h3>Titre de Niveau h3</h3>
+          <h4>Titre de Niveau h4</h4>
+          <h5>Titre de Niveau h5</h5>
+          <h6>Titre de Niveau h6</h6>
+        </fieldset>
+      </article>
+
+      <article id="paragraphe">
+        <h1>La conception d'un paragraphe</h1>
+        <code>
+          <pre>
+            &lt;!-- Pour générer un paragraphe -->
+            &lt;p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident porro ad
+              eaque explicabo tempore ullam veniam totam temporibus optio tempora.
+            &lt;/p>
+          </pre>
+        </code>
+
+        <fieldset>
+          <legend>Rendu</legend>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
+            porro ad eaque explicabo tempore ullam veniam totam temporibus optio
+            tempora.
+          </p>
+        </fieldset>
+      </article>
+
+      <article id="liste">
+        <h1>Les listes</h1>
+        <code>
+          <pre>
+            &lt;!-- Conception d'une liste non ordonnée -->
+            &lt;ul>
+              &lt;li>Je suis un premier point&lt;/li>
+              &lt;li>Je suis un second point&lt;/li>
+              &lt;li>Je suis un troisième point&lt;/li>
+            &lt;/ul>
+
+            &lt;!-- Conception d'une liste ordonnée -->
+            &lt;ol>
+              &lt;li>Je suis un premier point&lt;/li>
+              &lt;li>Je suis un second point&lt;/li>
+              &lt;li>Je suis un troisième point&lt;/li>
+            &lt;/ol>
+          </pre>
+        </code>
+
+        <fieldset>
+          <legend>Rendu</legend>
+          <ul>
+            <li>Je suis un premier point</li>
+            <li>Je suis un second point</li>
+            <li>Je suis un troisième point</li>
+          </ul>
+
+          <ol>
+            <li>Je suis un premier point</li>
+            <li>Je suis un second point</li>
+            <li>Je suis un troisième point</li>
+          </ol>
+        </fieldset>
+      </article>
+
+      <article id="links">
+        <h1>Découverte des liens</h1>
+        <code>
+          <pre>
+            &lt;!-- Un lien RELATIF -->
+            &lt;a href="./contact.html" target="_blank">Contactez-moi&lt;/a>
+
+            &lt;!-- Un lien ABSOLUE -->
+            &lt;a href="https://www.google.fr" target="_blank">Google.fr&lt;/a>
+          </pre>
+        </code>
+
+        <fieldset>
+          <legend>Rendu</legend>
+          <a href="./contact.html" target="_blank">Contactez-moi</a>
+          <a href="https://www.google.fr" target="_blank">Google.fr</a>
+        </fieldset>
+      </article>
+
+      <article id="images">
+        <h1>Les images</h1>
+        <code>
+          <pre>
+            &lt;!-- Un image avec les attributs indispensables -->
+            &lt;img
+              src="./assets/images/plage.jpg"
+              alt="Voici une superbe photo d'une plage libre de droit."
+            />
+
+            &lt;!-- Un image avec les attributs indispensables et facultatifs -->
+            &lt;img
+              src="./assets/images/plage.jpg"
+              alt="Voici une superbe photo d'une plage libre de droit."
+              width="600px"
+              height="400px"
+            />
+          </pre>
+
+          <fieldset>
+            <legend>Rendu</legend>
+            <img
+              src="./assets/images/plage.jpg"
+              alt="Voici une superbe photo d'une plage libre de droit."
+            />
+
+            <img
+              src="./assets/images/plage.jpg"
+              alt="Voici une superbe photo d'une plage libre de droit."
+              width="600px"
+              height="400px"
+            />
+          </fieldset>
+        </code>
+
+        <h2>Bonus Lien sur une image</h2>
+        <code>
+          <pre>
+            &lt;!-- Un lien vers google au clic sur une image -->
+            &lt;a href="https://www.google.fr" target="_blank">
+              &lt;img
+                src="./assets/images/plage.jpg"
+                alt="Voici une superbe photo d'une plage libre de droit."
+              />
+            &lt;/a>
+          </pre>
+        </code>
+
+        <fieldset>
+          <legend>Rendu</legend>
+          <a href="https://www.google.fr" target="_blank">
+            <img
+              src="./assets/images/plage.jpg"
+              alt="Voici une superbe photo d'une plage libre de droit."
+            />
+          </a>
+        </fieldset>
+        <h2>Bonus Lien sur un paragraphe</h2>
+        <code>
+          <pre>
+            &lt;!-- Un lien vers google au clic sur un paragraphe -->
+            &lt;a href="https://www.google.fr" target="_blank">
+              &lt;p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident porro ad
+                eaque explicabo tempore ullam veniam totam temporibus optio tempora.
+              &lt;/p>
+            &lt;/a>
+          </pre>
+        </code>
+
+        <fieldset>
+          <legend>Rendu</legend>
+          <a href="https://www.google.fr" target="_blank">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
+              porro ad eaque explicabo tempore ullam veniam totam temporibus
+              optio tempora.
+            </p>
+          </a>
+        </fieldset>
+      </article>
+
+      <article id="array">
+        <h1>Les tableaux</h1>
+        <code>
+          <pre>
+            &lt;!-- Conception d'un tableau d'une liste de courses -->
+            &lt;table>
+              &lt;tr>
+                &lt;th>Ref&lt;/th>
+                &lt;th>Nom&lt;/th>
+                &lt;th>Désignation&lt;/th>
+                &lt;th>Quantité(s)&lt;/th>
+                &lt;th>Prix unitaire&lt;/th>
+                &lt;th>Total&lt;/th>
+              &lt;/tr>
+
+              &lt;tr>
+                &lt;td>1597534682&lt;/td>
+                &lt;td>Pain au chocolat&lt;/td>
+                &lt;td>
+                  Ce pain avec une barre en chocolat va te rendre tellement accro que tu
+                  en redemanderas.
+                &lt;/td>
+                &lt;td>13&lt;/td>
+                &lt;td>0.75€&lt;/td>
+                &lt;td>9.75€&lt;/td>
+              &lt;/tr>
+              &lt;tr>
+                &lt;td>9518526543&lt;/td>
+                &lt;td>Pizzas Triangulaire&lt;/td>
+                &lt;td>
+                  Tu découvriras cette pizzas avec une forme chelou... Mais vu la classe
+                  ça colle bien pour vous :d
+                &lt;/td>
+                &lt;td>13&lt;/td>
+                &lt;td>8.00€&lt;/td>
+                &lt;td>104.00€&lt;/td>
+              &lt;/tr>
+              &lt;tr>
+                &lt;td>4567891334&lt;/td>
+                &lt;td>Imac&lt;/td>
+                &lt;td>
+                  Putain quelle kiff de bosser sur des claviers mac aussi dégeulasse que
+                  ça...
+                &lt;/td>
+                &lt;td>13&lt;/td>
+                &lt;td>49€&lt;/td>
+                &lt;td>637.00€&lt;/td>
+              &lt;/tr>
+              &lt;tr>
+                &lt;!-- colspan permet de fusionner un certain nombre de colone (ici 5) -->
+                &lt;th colspan="5">Prix TVA 5.5%&lt;/th>
+                &lt;td>41.29€&lt;/td>
+              &lt;/tr>
+              &lt;tr>
+                &lt;!-- colspan permet de fusionner un certain nombre de colone (ici 5) -->
+                &lt;th colspan="5">Prix HT&lt;/th>
+                &lt;td>750.75€&lt;/td>
+              &lt;/tr>
+              &lt;tr>
+                &lt;!-- colspan permet de fusionner un certain nombre de colone (ici 5) -->
+                &lt;th colspan="5">Prix TTC&lt;/th>
+                &lt;td>792.04€&lt;/td>
+              &lt;/tr>
+            &lt;/table>
+          </pre>
+        </code>
+
+        <fieldset>
+          <legend>Rendu</legend>
+          <table>
+            <tr>
+              <th>Ref</th>
+              <th>Nom</th>
+              <th>Désignation</th>
+              <th>Quantité(s)</th>
+              <th>Prix unitaire</th>
+              <th>Total</th>
+            </tr>
+
+            <tr>
+              <td>1597534682</td>
+              <td>Pain au chocolat</td>
+              <td>
+                Ce pain avec une barre en chocolat va te rendre tellement accro
+                que tu en redemanderas.
+              </td>
+              <td>13</td>
+              <td>0.75€</td>
+              <td>9.75€</td>
+            </tr>
+            <tr>
+              <td>9518526543</td>
+              <td>Pizzas Triangulaire</td>
+              <td>
+                Tu découvriras cette pizzas avec une forme chelou... Mais vu la
+                classe ça colle bien pour vous :d
+              </td>
+              <td>13</td>
+              <td>8.00€</td>
+              <td>104.00€</td>
+            </tr>
+            <tr>
+              <td>4567891334</td>
+              <td>Imac</td>
+              <td>
+                Putain quelle kiff de bosser sur des claviers mac aussi
+                dégeulasse que ça...
+              </td>
+              <td>13</td>
+              <td>49€</td>
+              <td>637.00€</td>
+            </tr>
+            <tr>
+              <!-- colspan permet de fusionner un certain nombre de colone (ici 5) -->
+              <th colspan="5">Prix TVA 5.5%</th>
+              <td>41.29€</td>
+            </tr>
+            <tr>
+              <!-- colspan permet de fusionner un certain nombre de colone (ici 5) -->
+              <th colspan="5">Prix HT</th>
+              <td>750.75€</td>
+            </tr>
+            <tr>
+              <!-- colspan permet de fusionner un certain nombre de colone (ici 5) -->
+              <th colspan="5">Prix TTC</th>
+              <td>792.04€</td>
+            </tr>
+          </table>
+        </fieldset>
+      </article>
+
+      <article id="form">
+        <h1>Les formulaires</h1>
+        <code>
+          <pre>
+            &lt;!-- Ouverture d'un formulaire sans rien dedans -->
+            &lt;form>
+              &lt;!-- Tout ce qui est en lien au formulaire doit se trouver dans cette partie -->
+            &lt;/form>
+
+            &lt;!-- Redirection vers une autre page -->
+            &lt;form action="./contact.html">
+              &lt;!-- Imaginons que nous ayons soumis notre formulaire via un "button de type submit",
+              alors les informations seront transmis par défaut en GET (méthode)
+              et ils seront visible dans la barre d'adresse de ton navigateur. -->
+            &lt;/form>
+          </pre>
+        </code>
+      </article>
+
+      <article id="inputs">
+        <h1>Les différents type d'input</h1>
+        <code>
+          <pre>
+            &lt;!-- Redirection vers une autre page -->
+            &lt;form action="./contact.html">
+
+              &lt;!-- FOR est directement lié à l'ID de l'input -->
+              &lt;label for="lastname">Nom:&lt;/label>
+
+              &lt;!-- NAME est le nom que l'on récupèrera lorsque l'on traitera 
+                   nos formulaire que ce soit en PHP ou bien en JAVASCRIPT -->
+              &lt;input type="text" placeholder="votre nom" id="lastname" name="lastname" />
+            &lt;/form>
+          </pre>
+        </code>
+
+        <fieldset>
+          <legend>Rendu</legend>
+          <form action="./contact.html">
+            <!-- FOR est directement lié à l'ID de l'input -->
+            <label for="lastname">Nom:</label>
+
+            <!-- NAME est le nom que l'on récupèrera lorsque l'on traitera 
+                 nos formulaire que ce soit en PHP ou bien en JAVASCRIPT -->
+            <input
+              type="text"
+              placeholder="votre nom"
+              id="lastname"
+              name="lastname"
+            />
+          </form>
+        </fieldset>
+      </article>
+    </main>
+    <footer>
+      <span>Enseignant: Fabien Simon</span>
+      <span>By Alain GUILLON</span>
+    </footer>
+  </body>
 </html>
